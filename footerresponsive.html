@@ -1,0 +1,108 @@
+<style>
+    html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: auto;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.date-time {
+  margin-right: 5px;
+}
+
+.app-version {
+  font-size: 14px;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.icons i {
+  margin-right: 10px;
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left, .middle, .right {
+    width: 100%;
+  }
+
+  .right {
+    margin-top: 10px;
+  }
+}
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+<body>
+    <div class="content">
+      <!-- Your content goes here -->
+    </div>
+    <footer>
+      <div class="left">
+        <div class="title">Last Visited</div>
+        <div class="date-time">March 4, 2023 2:30pm</div>
+        <div class="app-version">Application Version 1.0</div>
+      </div>
+      <div class="middle">
+        <div class="title">Other Title</div>
+        <div class="icon"><i class="fas fa-star"></i></div>
+      </div>
+      <div class="right">
+        <div class="title">Title</div>
+        <div class="icons">
+          <i class="fas fa-envelope"></i>
+          <i class="fas fa-bell"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+  
+</html>
