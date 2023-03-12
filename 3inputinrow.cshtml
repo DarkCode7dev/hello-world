@@ -1,0 +1,51 @@
+<div class="input-row">
+  <div class="input-container">
+    @Html.LabelFor(m => m.Property1)
+    @Html.EditorFor(m => m.Property1)
+  </div>
+  <div class="input-container">
+    @Html.LabelFor(m => m.Property2)
+    @Html.EditorFor(m => m.Property2)
+  </div>
+  <div class="input-container">
+    @Html.LabelFor(m => m.Property3)
+    @Html.EditorFor(m => m.Property3)
+  </div>
+</div>
+
+
+==============================================================
+css
+
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input-container {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-container label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-container input[type="text"], .input-container textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .input-container {
+    flex-basis: 100%;
+  }
+}
